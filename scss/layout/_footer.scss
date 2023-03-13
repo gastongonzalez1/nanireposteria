@@ -1,0 +1,27 @@
+/****************   FOOTER **************************************/
+.footer{
+    width: 100%;
+    background-color: #F2D1C9;
+    padding: 1rem;
+    .footer_contenedor{
+        width: 100%;
+        .logo{
+            width: fit-content;
+            padding: 0 3rem;
+            img{
+                width: 10rem;
+            }
+        }
+        .redes {
+            display: inline;
+            padding: 0 .5rem;
+            .icon {
+                a {
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

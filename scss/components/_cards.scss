@@ -1,0 +1,16 @@
+/****************   tarjeta **************************************/
+.cards{
+    width: 100%;
+    .card{
+        width: 22rem;
+        background-color: #F2D1C9;
+        padding: 1rem;
+        margin: 1rem;
+        .imagen{
+            img{
+                width: 100%;
+                height: 15rem;
+            }
+        } 
+    }
+}

@@ -7,7 +7,7 @@
     <title>contacto</title>
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
     <body>
         <header class="header container-fluid">
@@ -27,35 +27,43 @@
             </div>
        </header>
        <main>
-            <section class="contacto align-items-center justify-content-center d-flex flex-column">
-                <div class="textocontacto1">
+            <section class="contacto align-items-center justify-content-center d-flex flex-column p-4">
+                <div class="w-75 text-center">
+                    <h1>CONTACTO</h1>
                     <p>contactate con nosotros para poder obtener mas informacion de nuestros porductos y para poder enterate de todas las ofertas que tenemos para vos ademas podras encargrar el producto que mas te guste </p>
                 </div>       
-                <form action="" class="form d-flex flex-column justify-content-center">
-                    <div class="form-group d-flex flex-column">
-                        <label for="name">Tu Nombre</label>
-                        <input type="text" name="name" id="name" placeholder="Fulanito de Tal">
+                <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        <form>
+                          <div class="form-group">
+                            <label for="nombre">Tu nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Tu email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                          </div>
+                          <div class="form-group">
+                            <label for="telefono">Tu teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                          </div>
+                          <div class="form-group">
+                            <label for="consulta">Tu consulta</label>
+                            <textarea class="form-control" id="consulta" rows="5" placeholder="Escribe aquí tu consulta"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                          <button type="reset" class="btn btn-dark">Limpiar Campos</button>
+                        </form>
+                      </div>
                     </div>
-                    <div class="form-group d-flex flex-column">
-                        <label for="name">Tu Telefono</label>
-                        <input type="tel" name="telefono" id="telefono">
-                    </div>
-                    <div class="form-group d-flex flex-column">
-                        <label for="email">Tu Email</label>
-                        <input type="text" name="email" id="email" placeholder="ejemplo@algo.com">
-                    </div>
-                    <div class="form-group d-flex flex-column">
-                        <label for="message">Tu Consulta</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
-                        <input type="reset" value="limpiar">
-                        <button type="submit" class="button">Enviar</button>
-                    </div>
-                </form>
+                  </div>
+                  
             </section>
        </main>
        <footer class="footer container-fluid">
-        <div class="footer_contenedor col d-flex flex-column align-items-center justify-content-center">
-            <div class="logo row">
+        <div class="footer_contenedor d-flex flex-column align-items-center justify-content-center">
+            <div class="logo">
                 <img src="../assets/images/logo.png" alt="logo">
             </div>
             <div class="redes d-flex">
@@ -75,6 +83,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="../js/bootstrap.js"></script>
 </body>
 </html> 

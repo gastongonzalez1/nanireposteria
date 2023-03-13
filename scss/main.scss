@@ -1,9 +1,20 @@
-.header {
-    background-color: red;
-    .logo {
-        background-color: green;
-    }
-    .navegacion {
-        background-color: aqua;
-    }
-}
+
+@import 'base/typo';
+@import 'base/reset';
+@import 'utilities/maps';
+@import 'utilities/mixins';
+@import 'utilities/globals';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cards';
+
+@import 'layout/header';
+
+@import 'views/index';
+@import 'views/tortas';
+@import 'views/postres';
+@import 'views/nosotros';
+@import 'views/contacto';
+@import 'layout/footer';
+
