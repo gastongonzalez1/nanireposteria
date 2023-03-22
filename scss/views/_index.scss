@@ -5,13 +5,18 @@
         width: 22rem;
         background-color: #F2D1C9;
         padding: 1rem;
-        margin: 1rem; 
+        margin: 1rem;
+        transition: all 0.3s ease-in-out; 
         .imagen{
             img{
                 width: 100%;
                 height: 15rem;
             }
         } 
+        &:hover {
+            margin: 2rem;
+            transform: scale(1.1);
+        }
     }
 }
 /****************   contacto **************************************/

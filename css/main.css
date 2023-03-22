@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 a, p, h1, h2, h3, h4, h5, h6, label, li {
   font-family: "Lato";
-  text-transform: capitalize;
 }
 
 * {
@@ -36,14 +36,14 @@ body {
   color: #343a40;
 }
 
-.carousel-item {
+.carousel .carousel-item {
   width: 100%;
   position: relative;
 }
-.carousel-item::after {
+.carousel .carousel-item::after {
   content: "";
   width: 100%;
-  height: 20rem;
+  height: 33rem;
   background-color: #111;
   position: absolute;
   top: 0;
@@ -51,22 +51,44 @@ body {
   opacity: 0.8;
   z-index: 1;
 }
-.carousel-item img {
+.carousel .carousel-item img {
   width: 100%;
-  height: 20rem;
+  height: 33rem;
   object-fit: cover;
 }
-.carousel-item .carousel-caption {
+.carousel .carousel-item .carousel-caption {
   padding: 2rem;
-  width: 100%;
+  width: 90%;
   z-index: 100;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
+  text-align: center;
 }
-.carousel-item .carousel-caption h1, .carousel-item .carousel-caption h2, .carousel-item .carousel-caption p {
+.carousel .carousel-item .carousel-caption h1, .carousel .carousel-item .carousel-caption h2, .carousel .carousel-item .carousel-caption p {
   color: #fff;
+}
+.carousel .carousel-inner .control-button {
+  width: 100rem;
+  height: 15rem;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 1000;
+  transition: opacity 0.15s ease-in-out;
+}
+.carousel .carousel-inner .control-button:hover {
+  opacity: 0.9;
+}
+.carousel .carousel-inner .control-button:focus {
+  outline: none;
 }
 
 /****************   tarjeta **************************************/
@@ -125,10 +147,15 @@ body {
   background-color: #F2D1C9;
   padding: 1rem;
   margin: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .tortas .torta .imagen img, .tartas .torta .imagen img, .tartas .tarta .imagen img {
   width: 100%;
   height: 15rem;
+}
+.tortas .torta:hover, .tartas .torta:hover, .tartas .tarta:hover {
+  margin: 2rem;
+  transform: scale(1.1);
 }
 
 /****************   contacto **************************************/
@@ -166,18 +193,36 @@ body {
   width: 100%;
   height: 15rem;
 }
+.tortas .torta .titulo-torta, .tartas .torta .titulo-torta, .tartas .tarta .titulo-torta {
+  font-size: 3rem;
+  font-family: "Italianno", cursive;
+}
 
 /****************   tartas **************************************/
 /****************   postres **************************************/
 .postre {
-  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #F2D1C9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 20rem;
+  position: relative;
 }
 .postre img {
-  width: 20rem;
+  width: 100%;
   height: 15rem;
+  object-fit: cover;
 }
 .postre p {
-  width: 20rem;
+  margin: 2rem 0;
+}
+.postre .precio {
+  background-color: #f1c40f; /* color amarillo */
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
 }
 
 /****************   FOOTER **************************************/
