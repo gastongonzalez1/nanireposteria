@@ -1,0 +1,11 @@
+@mixin estilos-botones($color, $fcolor) {
+    padding: .375rem .75rem;
+    color: $fcolor;
+    font-weight: bolder;
+    border: 1px solid $color;
+	border-radius: .25rem;
+	font-size: 1rem;
+    width: fit-content;
+    line-height: 1.5;
+    background-color: $color;
+}

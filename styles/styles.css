@@ -1,5 +1,5 @@
 /************************  GLOBALES ***************************************/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,195 +7,148 @@
 body {
     background-color: #F2DFE4;
 }
+
 .logo{
-    width: 10rem;
-    height: 10rem;
+    width: fit-content;
 }
 .logo img {
     width: 10rem;
-    height: 10rem;
 }
 a,p,h1,h2,h3,h4,h5,h6,label,li {
     font-family: "Lato";
     text-transform: capitalize;
 }
+/****************   tarjeta **************************************/
+.tarjetas{
+    width: 100%;
+}
+.tarjeta {
+    width: 22rem;
+    background-color: #F2D1C9;
+    padding: 1rem;
+    margin: 1rem;
+}
+.tarjeta .imagen img {
+    width: 100%;
+    height: 15rem;
+}
 /****************   HEADER         **************************************/
 .header{
     width: 100%;
     background-color: #F2D1C9;
-    position: relative;
 }
-
- .logo img {
+.header .logo {
+    width: fit-content;
+}
+ .header .logo img {
     width: 10rem;
-    height: 10rem;
 }
 .header .navegacion {
-    position: absolute;
-    right: 0;
-    top: 40%;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
 }
+.header .navegacion ul {
+    width: fit-content;
 
+}
 .header .navegacion ul li {
-    display: inline;
-    padding: 1rem;
+    margin: .5rem;
     list-style: none;
 }
 .header .navegacion ul li a {
     color:  #000;
     text-decoration: none;
 }
+/****************   reposteria **************************************/
 
-.reposteria {
-    padding: 2rem;
-    text-align: center;
-}
+
 
 .tortas{
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 .torta {
-    width: 30rem;
+    width: 22rem;
     background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 .torta .imagen img {
-    width: 30rem;
-}
-.contacto{
-    width: fit-content;
-    background-color: #F2D1C9;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
-}
-.contenido_contacto {
-    padding: 2rem;
-    display: flex;
+    width: 100%;
+    height: 15rem;
 }
 
+/****************   contacto **************************************/
+
+.contacto{
+    width: 100%;
+    background-color: #F2D1C9;
+    padding: .5rem;
+    margin: 2rem 0;
+}
+.contacto .titulo_seccion {
+    width: fit-content;
+}
+.contenido_contacto {
+    width: 100%;
+    padding: 1rem;
+}
+.contenido_contacto .mapa {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
 .contenido_contacto .mapa iframe {
-    width: 30rem;
+    width: 20rem;
     height: 20rem;
 }
+.contenido_contacto .informacion {
+    width: max-content;
+}
+.contenido_contacto .informacion p {
+    width: fit-content;
+}
+/****************   tortas **************************************/
+.tortas .torta img {
+    width: 100%;
+    height: 15rem;
+}
+/****************   tartas **************************************/
+.tartas{
+    width: 100%;
+}
+.tarta {
+    width: 22rem;
+    background-color: #F2D1C9;
+    padding: 1rem;
+    margin: 1rem;
+}
+.tarta img {
+    width: 100%;
+    height: 15rem;
+}
+/****************   postres **************************************/
+.postre img {
+    width: 100%;
+    height: 15rem;
+}
+/****************   FOOTER **************************************/
 .footer {
+    width: 100%;
     background-color: #F2D1C9;
     padding: 1rem;
 }
-.footer_contenedor {
-    position: relative;
-    text-align: center;
-    padding: 2rem;
-}
 .footer_contenedor .logo {
+    width: fit-content;
     padding: 0 34rem;
 }
-
+.footer_contenedor .logo img {
+    width: 10rem;
+}
 .footer_contenedor .redes > * {
     display: inline;
     padding: 0 .5rem;
 }
-.mtortas {
-    padding: 2rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-.casamientoimg{
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.cumple15 {
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.cumple15img{
-    width: 30rem;
-}
-.bautismo{
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.bautismo .bautismoimg{
-    width: 30rem; 
-}
-.cumpleaño{
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.cumpleaño .cumpleañoimg{
-    width: 30rem;
-}
-.tartas{
-    padding: 2rem;
-    text-align: center;
-}
-.tarta{
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.tartaimg{
-    width: 30rem;
-}
-
-.postres{
-    padding: 2rem; 
-    text-align: center;
-}
-.postre{
-    width: 30rem;
-    background-color: #F2D1C9;
-    padding: 2rem;
-    margin: 2rem;
-}
-.postreimg{
-    width: 30rem;
-}
-.sobre{
-    padding: 2rem;
-    margin: 2rem;
-    text-align: center;
-    background-color: #F2D1C9;
-}
-.nosotros{
-    padding: 1rem;
-    margin: 3rem;
-    text-align: center;
-    background-color: #F2D1C9;
-    width: 30rem;
-
-}
-.proposito{
-    padding: 1rem;
-    margin: 3rem;
-    text-align: center;
-    background-color: #F2D1C9;
-    width: 30rem;
-}
-.sobrenos{
-    display: flex;
-}
-.contacto1{  
-    background-color: #F2D1C9;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
-}
-.textocontacto1{
-    background-color: #F2D1C9;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
+.footer .footer_contenedor .redes .icon a img {
+    width: 3rem;
 }

@@ -6,90 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tortas</title>
     <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img  src="../assets/images/logo.png" alt="logo">
+        <header class="header container-fluid">
+            <div class="row d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
+                <div class="logo">
+                    <img  src="../assets/images/logo.png" alt="logo">
+                </div>
+                <nav class="navegacion">
+                    <ul class="d-flex m-0 p-0">
+                        <li> <a href="../index.html">inicio</a> </li>
+                        <li> <a href="tortas.html">tortas</a> </li>
+                        <li> <a href="postres.html">postres</a> </li>
+                        <li> <a href="sobrenosotros.html">nosotros</a> </li>
+                        <li> <a href="contacto.html">contacto</a> </li>
+                   </ul>
+                </nav>
             </div>
-            <nav class="navegacion">
-               <ul>
-                    <li> <a href="../index.html">inicio</a> </li>
-                    <li> <a href="tortas.html">tortas</a> </li>
-                    <li> <a href="postres.html">postres</a> </li>
-                    <li> <a href="sobrenosotros.html">sobre nosotros</a> </li>
-                    <li> <a href="contacto.html">contacto</a> </li>
-               </ul>
-            </nav>
        </header>
         <main>
-            <section class="mtortas"> 
+            <section class="tortas container d-flex flex-column align-items-center my-4"> 
                 <h1>tortas</h1>
                 <p>en esta seccion vas a poder encontrar todo tipo de tortas ya sea para un cumpleaños, para un casamiento,una fiesta de 15,hasta para un bautismo</p>
-                <div class="casamientoimg">
-                    <img src="https://kekatortas.com/361/casamiento-5.jpg" alt="">
-                    <p>casamientos</p>
+                <div class="row justify-content-center row row-cols-1 row-cols-md-2 row-cols-xl-2">
+                    <article class="torta">
+                        <img src="https://kekatortas.com/361/casamiento-5.jpg" alt="">
+                        <p>casamientos</p>
+                    </article>
+                    <article class="torta">
+                        <img class="cumple15img" src="https://www.daledetalles.com/wp-content/uploads/2021/03/pastel-quince-anos3.jpg" alt="">
+                        <p>cumpleaños de 15</p>
+                    </article>
+                    <article class="torta">
+                        <div>
+                            <img class="bautismoimg"src="https://2.blogs.elcomercio.pe/omg/wp-content/uploads/sites/213/2017/10/torta-de-bautizo-24151-187.jpg" alt="">
+                            <p>bautismos</p>
+                        </div>
+                    </article>
+                    <article class="torta">
+                        <div >
+                            <img class="cumpleañoimg"src="https://d320djwtwnl5uo.cloudfront.net/recetas/share/torta_8CyNZX01EGgRhvQjioSqeTYOuP2KA5.png" alt="">
+                            <p>cumpleaños</p>
+                        </div>
+                    </article>
                 </div>
-                <div class="cumple15">
-                    <img class="cumple15img" src="https://www.daledetalles.com/wp-content/uploads/2021/03/pastel-quince-anos3.jpg" alt="">
-                    <p>cumpleaños de 15</p>
-                </div>
-                <article class="bautismo">
-                    <div>
-                        <img class="bautismoimg"src="https://2.blogs.elcomercio.pe/omg/wp-content/uploads/sites/213/2017/10/torta-de-bautizo-24151-187.jpg" alt="">
-                        <p>bautismos</p>
-                    </div>
-                </article>
-                <article class="cumpleaño">
-                    <div >
-                        <img class="cumpleañoimg"src="https://d320djwtwnl5uo.cloudfront.net/recetas/share/torta_8CyNZX01EGgRhvQjioSqeTYOuP2KA5.png" alt="">
-                        <p>cumpleaños</p>
-                    </div>
-                </article>
             </section>
-            <section class="tartas">
+            <section class="tartas container d-flex flex-column align-items-center my-4">
                 <h2>tartas</h2>
-                <div class="tarta">
-                    <img class="tartaimg" src="https://static.wixstatic.com/media/c40a1a_fcabf36b5402482e87c466d631bd394a~mv2.jpg/v1/fill/w_2250,h_2250,al_c,q_85/c40a1a_fcabf36b5402482e87c466d631bd394a~mv2.jpg" alt="">
-                    <p>tarta cabsha:esta es una tarta con un relleno de dulse de leche con una capa de agansh de chocolate</p>
+                <div class="row justify-content-center row row-cols-1 row-cols-md-2 row-cols-xl-2">
+                    <div class="tarta">
+                        <img class="tartaimg" src="https://static.wixstatic.com/media/c40a1a_fcabf36b5402482e87c466d631bd394a~mv2.jpg/v1/fill/w_2250,h_2250,al_c,q_85/c40a1a_fcabf36b5402482e87c466d631bd394a~mv2.jpg" alt="">
+                        <p>tarta cabsha:esta es una tarta con un relleno de dulse de leche con una capa de agansh de chocolate</p>
+                    </div>
+                    <div class="tarta">
+                        <img class="tartaimg" src="https://static.solopostres.com/uploads/2010/10/lemon-pie-1.jpg" alt="">
+                        <p>lemon pie:esta es una combinacion de base crujiente con relleno cremoso de limon y una capa de merengue</p>
+                    </div>
+                    <div class="tarta">
+                        <img class="tartaimg" src="https://i.ytimg.com/vi/g7o2AcgbVRI/sddefault.jpg" alt="">
+                        <p>tarta duo: es una tarta elaborada con mousse de chocolate y dulce de leche con una base fina de mas y rellena de merenguitos
+                        </p>
+                    </div>
+                    <div class="tarta">
+                        <img class="tartaimg" src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/EC55VMD5JBELTGIGNPRDRMKEXY.jpg" alt="">
+                        <p>tarta de frutilla: es una tarta con una base crujiente rellena de crema y con capa de frutollas naturales</p>
+                    </div>
+                    <div class="tarta">
+                        <img class="tartaimg" src="http://3.bp.blogspot.com/-msiD1VtCj04/WrkNFIJz0yI/AAAAAAAAB2E/rcRt3tqapXoUXfB4-lxgans35dqxaMZ-ACK4BGAYYCw/s1600/tan%2Bdulce%2Brecetas.jpg" alt="">
+                        <p>tarta de coco: esta es una tara rellena de dulce de leche con una capa de coco rallado </p>
+                    </div>
+                    <div class="tarta">
+                        <img class="tartaimg" src="https://static.guiainfantil.com/media/9787/c/tarta-de-queso-tradicional-receta-de-new-york-cheesecake-md.jpg" alt="">
+                        <p>cheescake:es un postre hecho a base de ricota,queso crema,azucar y otros ingerdientes, tiene una base de galletitas modidas</p>
+                    </div>
                 </div>
-                <div class="tarta">
-                    <img class="tartaimg" src="https://static.solopostres.com/uploads/2010/10/lemon-pie-1.jpg" alt="">
-                    <p>lemon pie:esta es una combinacion de base crujiente con relleno cremoso de limon y una capa de merengue</p>
-                </div>
-                <div class="tarta">
-                    <img class="tartaimg" src="https://i.ytimg.com/vi/g7o2AcgbVRI/sddefault.jpg" alt="">
-                    <p>tarta duo: es una tarta elaborada con mousse de chocolate y dulce de leche con una base fina de mas y rellena de merenguitos
-                    </p>
-                </div>
-                <div class="tarta">
-                    <img class="tartaimg" src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/EC55VMD5JBELTGIGNPRDRMKEXY.jpg" alt="">
-                    <p>tarta de frutilla: es una tarta con una base crujiente rellena de crema y con capa de frutollas naturales</p>
-                </div>
-                <div class="tarta">
-                    <img class="tartaimg" src="http://3.bp.blogspot.com/-msiD1VtCj04/WrkNFIJz0yI/AAAAAAAAB2E/rcRt3tqapXoUXfB4-lxgans35dqxaMZ-ACK4BGAYYCw/s1600/tan%2Bdulce%2Brecetas.jpg" alt="">
-                    <p>tarta de coco: esta es una tara rellena de dulce de leche con una capa de coco rallado </p>
-                </div>
-                <div class="tarta">
-                    <img class="tartaimg" src="https://static.guiainfantil.com/media/9787/c/tarta-de-queso-tradicional-receta-de-new-york-cheesecake-md.jpg" alt="">
-                    <p>cheescake:es un postre hecho a base de ricota,queso crema,azucar y otros ingerdientes, tiene una base de galletitas modidas</p>
-                </div>
+
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer_contenedor">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="logo">
+        <footer class="footer container-fluid">
+            <div class="footer_contenedor col d-flex flex-column align-items-center justify-content-center">
+                <div class="logo row">
+                    <img src="../assets/images/logo.png" alt="logo">
                 </div>
-                <div class="redes">
-                    <p>instagram</p>
-                    <p>whatsapp</p>
+                <div class="redes d-flex">
+                    <div class="icon">
+                        <a href="insta">
+                            <img src="../assets/icons/Instagram-512.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="wsp" class="wsp">
+                            <img src="../assets/icons/social-whatsapp-circle-512.webp" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="disclaimer">
+                <div class="disclaimer row">
                     <p>todos los derechos recervados</p>
                 </div>
             </div>
         </footer>
+        <script src="../js/bootstrap.js"></script>
     </body>
 </html> 

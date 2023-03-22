@@ -6,61 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
     <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img  src="../assets/images/logo.png" alt="logo">
+        <header class="header container-fluid">
+            <div class="row d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
+                <div class="logo">
+                    <img  src="../assets/images/logo.png" alt="logo">
+                </div>
+                <nav class="navegacion">
+                    <ul class="d-flex m-0 p-0">
+                        <li> <a href="../index.html">inicio</a> </li>
+                        <li> <a href="tortas.html">tortas</a> </li>
+                        <li> <a href="postres.html">postres</a> </li>
+                        <li> <a href="sobrenosotros.html">nosotros</a> </li>
+                        <li> <a href="contacto.html">contacto</a> </li>
+                   </ul>
+                </nav>
             </div>
-            <nav class="navegacion">
-               <ul>
-                    <li> <a href="../index.html">inicio</a> </li>
-                    <li> <a href="tortas.html">tortas</a> </li>
-                    <li> <a href="postres.html">postres</a> </li>
-                    <li> <a href="sobrenosotros.html">sobre nosotros</a> </li>
-                    <li> <a href="contacto.html">contacto</a> </li>
-               </ul>
-            </nav>
-        </header>
+       </header>
        <main>
-            <section class="contacto1">
-                <h1>contactate con nosotros</h1> 
-            </section>
+            <section class="contacto align-items-center justify-content-center d-flex flex-column">
                 <div class="textocontacto1">
                     <p>contactate con nosotros para poder obtener mas informacion de nuestros porductos y para poder enterate de todas las ofertas que tenemos para vos ademas podras encargrar el producto que mas te guste </p>
                 </div>       
-                <form action="">
-                    <div>
-                        <input type="telefono" placeholder="telefono">
+                <form action="" class="form d-flex flex-column justify-content-center">
+                    <div class="form-group d-flex flex-column">
+                        <label for="name">Tu Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Fulanito de Tal">
                     </div>
-                    <div>
-                        <input type="gmail" placeholder="gmail">
+                    <div class="form-group d-flex flex-column">
+                        <label for="name">Tu Telefono</label>
+                        <input type="tel" name="telefono" id="telefono">
                     </div>
-                    <div>
-                        <label for="depocita tu consulta">depocita tu consulta</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="form-group d-flex flex-column">
+                        <label for="email">Tu Email</label>
+                        <input type="text" name="email" id="email" placeholder="ejemplo@algo.com">
                     </div>
-                    <div>
-                        <input type="button" value="enviar">
+                    <div class="form-group d-flex flex-column">
+                        <label for="message">Tu Consulta</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
                         <input type="reset" value="limpiar">
+                        <button type="submit" class="button">Enviar</button>
                     </div>
                 </form>
             </section>
        </main>
-       <footer class="footer">
-        <div class="footer_contenedor">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
+       <footer class="footer container-fluid">
+        <div class="footer_contenedor col d-flex flex-column align-items-center justify-content-center">
+            <div class="logo row">
+                <img src="../assets/images/logo.png" alt="logo">
             </div>
-            <div class="redes">
-                <p>instagram</p>
-                <p>whatsapp</p>
+            <div class="redes d-flex">
+                <div class="icon">
+                    <a href="insta">
+                        <img src="../assets/icons/Instagram-512.webp" alt="">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="wsp" class="wsp">
+                        <img src="../assets/icons/social-whatsapp-circle-512.webp" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="disclaimer">
+            <div class="disclaimer row">
                 <p>todos los derechos recervados</p>
             </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html> 

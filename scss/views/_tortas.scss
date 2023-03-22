@@ -1,0 +1,22 @@
+/****************   tortas **************************************/
+.tortas{
+    @extend .tortas;
+    .torta{
+        img{
+            width: 100%;
+            height: 15rem;
+        }
+        .titulo-torta {
+            font-size: 3rem;
+            font-family: 'Italianno', cursive;
+        }
+    } 
+}
+/****************   tartas **************************************/
+.tartas{
+    @extend .tortas;
+    .tarta {
+        @extend .torta;
+    }
+}
+

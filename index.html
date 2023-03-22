@@ -6,67 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nani reposteria</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
+        <header class="header container-fluid">
+            <div class="row d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
+                <div class="logo ">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+                 <nav class="navegacion">
+                    <ul class="d-flex m-0 p-0">
+                        <li> <a href="#">inicio</a> </li>
+                        <li> <a href="pages/tortas.html">tortas</a> </li>
+                        <li> <a href="pages/postres.html">postres</a> </li>
+                        <li> <a href="pages/sobrenosotros.html">nosotros</a> </li>
+                        <li> <a href="pages/contacto.html">contacto</a> </li>
+                    </ul>
+                 </nav>
             </div>
-             <nav class="navegacion">
-                <ul>
-                    <li> <a href="#">inicio</a> </li>
-                    <li> <a href="pages/tortas.html">tortas</a> </li>
-                    <li> <a href="pages/postres.html">postres</a> </li>
-                    <li> <a href="pages/sobrenosotros.html">sobre nosotros</a> </li>
-                    <li> <a href="pages/contacto.html">contacto</a> </li>
-                </ul>
-             </nav>
         </header>
         <main>
-             <section class="reposteria">
+             <section class="reposteria container d-flex flex-column align-items-center my-4">
                 <h1>bienvenidos a nani reposteria </h1>
                 <p>aca vas a encontrar la mejores tortas , tartas y postres de todo cordoba </p>
-                <div class="tortas">
+                <div class="tortas justify-content-center row row-cols-1 row-cols-md-2 row-cols-xl-2">
                     <article class="torta">
-                      <div class="imagen">
-                        <a href="pages/tortas.html">
-                            <img src="https://d320djwtwnl5uo.cloudfront.net/recetas/cover/torta_8CyNZX01EGgRhvQjioSqeTYOuP2KA5.png" alt="">
-                        </a>
-                      </div>
-                      <div class="texto">
-                           <h2>tortas</h2>
-                      </div>
+                        <div class="texto">
+                            <h2>tortas</h2>
+                        </div>
+                        <div class="imagen">
+                            <a href="pages/tortas.html">
+                                <img src="https://d320djwtwnl5uo.cloudfront.net/recetas/cover/torta_8CyNZX01EGgRhvQjioSqeTYOuP2KA5.png" alt="">
+                            </a>
+                        </div>
+
                     </article>
                     <article class="torta">
+                        <div class="texto">
+                            <h2>tartas</h2>
+                        </div>
                         <div class="imagen">
                             <a href="pages/tortas.html">
                                 <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/6641251d07e6-tarta-de-chocolate.jpg" alt="">
                              </a>
                         </div>
-                        <div class="texto">
-                            <h2>tartas</h2>
-                        </div>
+
                     </article>
                     <article class="torta">
+                        <div class="texto">
+                            <h2>postres</h2>
+                       </div>
                         <div class="imagen">
                             <a href="pages/postres.html">
                                 <img src="https://www.hogarmania.com/archivos/201903/postres-chocolate-668x400x80xX.jpg" alt="">
                             </a>                            
                         </div>
-                        <div class="texto">
-                             <h2>postres</h2>
-                        </div>
+
                     </article>
                 </div>
              </section>
-            <section class="contacto">
-                <h2>donde encontrarnos</h2>
-                <div class="contenido_contacto">
+            <section class="contacto container-fluid d-flex flex-column justify-content-center align-items-center">
+                <div class="titulo_seccion">
+                    <h2>donde encontrarnos</h2>
+                </div>
+                <div class="contenido_contacto row align-items-center justify-content-center">
                     <div class="mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.972418156641!2d-64.18355199999999!3d-31.414886000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a282d6f3a51b%3A0x4c3d8d6ca27e6d86!2s9%20de%20Julio%20%26%20San%20Mart%C3%ADn%2C%20X5022%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1674597681026!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="informacion">
+                    <div class="informacion d-flex flex-column justify-content-center ">
                         <p>estamos ubicados en unquillo</p>
                         <p>telefono:1234567</p>
                         <p>horario de atencion de 8:00 a 18:00 </p>
@@ -74,19 +82,28 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer_contenedor">
-                <div class="logo">
+        <footer class="footer container-fluid">
+            <div class="footer_contenedor col d-flex flex-column align-items-center justify-content-center">
+                <div class="logo row">
                     <img src="assets/images/logo.png" alt="logo">
                 </div>
-                <div class="redes">
-                    <p>instagram</p>
-                    <p>whatsapp</p>
+                <div class="redes d-flex">
+                    <div class="icon">
+                        <a href="insta">
+                            <img src="assets/icons/Instagram-512.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="wsp" class="wsp">
+                            <img src="assets/icons/social-whatsapp-circle-512.webp" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="disclaimer">
+                <div class="disclaimer row">
                     <p>todos los derechos recervados</p>
                 </div>
             </div>
         </footer>
+        <script src="js/bootstrap.js"></script>
     </body>
 </html>

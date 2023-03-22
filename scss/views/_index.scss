@@ -1,0 +1,51 @@
+/****************   reposteria **************************************/
+.tortas{
+    width: 100%;
+    .torta{
+        width: 22rem;
+        background-color: #F2D1C9;
+        padding: 1rem;
+        margin: 1rem;
+        transition: all 0.3s ease-in-out; 
+        .imagen{
+            img{
+                width: 100%;
+                height: 15rem;
+            }
+        } 
+        &:hover {
+            margin: 2rem;
+            transform: scale(1.1);
+        }
+    }
+}
+/****************   contacto **************************************/
+
+.contacto{
+    width: 100%;
+    background-color: #F2D1C9;
+    padding: .5rem;
+    margin: 2rem 0;
+    .titulo_seccion{
+        width: fit-content;
+    }
+    .contenido_contacto {
+        width: 100%;
+        padding: 1rem;
+        .mapa{
+            width: fit-content;
+            margin: 0;
+            padding: 0;
+            iframe{
+                width: 17rem;
+                height: 20rem;
+            }
+        }
+        .informacion{
+            width: max-content;
+            p{
+                width: fit-content; 
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+.carousel {
+    .carousel-item {
+        width: 100%;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 33rem;
+          background-color: #111;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: .8;
+          z-index: 1;
+        }
+        img {
+            width: 100%;
+            height: 33rem;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            padding: 2rem;
+            width: 90%;
+            z-index: 100;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            text-align: center;
+            h1, h2, p {
+              color: #fff;
+            }
+          }
+    }
+    .carousel-inner {
+        .control-button {
+            width: 100rem;
+            height: 15rem;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            opacity: 0.5;
+            z-index: 1000;
+            transition: opacity 0.15s ease-in-out;
+          }
+          .control-button:hover {
+            opacity: 0.9;
+          }
+          .control-button:focus {
+            outline: none;
+          }
+    }
+}

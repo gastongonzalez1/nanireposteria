@@ -1,0 +1,9 @@
+/*************** BUTTONS ***************/
+.btn {
+    @include estilos-botones(#111, #fff);
+    &:hover {
+        border-color: map-get($map: $colores, $key: dark);
+        background-color: map-get($map: $colores, $key: light);
+        color: map-get($map: $colores, $key: dark);
+    }
+}
