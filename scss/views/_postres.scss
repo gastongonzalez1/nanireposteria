@@ -1,4 +1,23 @@
 /****************   postres **************************************/
+.title {
+    text-align: center;
+    background-color: #F2D1C9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    h1 {
+        font-size: 36px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #777777;
+        margin-bottom: 0;
+      }
+  }
+
 .postre {
     margin: 1rem;
     padding: 1rem;

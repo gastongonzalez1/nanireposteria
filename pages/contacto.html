@@ -6,17 +6,19 @@
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="canonical" href="https://nanireposteria.netlify.app/index.html">
     <meta name="description" content="Contacta con nosotros para obtener información de nuestros productos, ofertas y hacer tus pedidos.">
+    <meta name="author" content="Nani Repostería">
+    <meta name="publisher" content="Nani Repostería">
     <meta name="keywords" content="repostería, pastelería, tartas, postres, pedidos">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.ejemplo.com/contacto.html">
 </head>
     <body>
         <header class="header container-fluid">
             <div class="row d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
                 <div class="logo">
-                    <a href="../index.html">
-                        <img src="../assets/images/logo.png" alt="Logo">
+                    <a href="../index.html" title="inicio">
+                        <img src="../assets/images/logo.png" alt="Logo" title="logo">
                     </a>
                 </div>
                 <nav class="navegacion">
@@ -34,7 +36,7 @@
             <section class="contacto align-items-center justify-content-center d-flex flex-column p-4">
                 <div class="w-75 text-center">
                     <h1 class="">CONTACTO</h1>
-                    <p>Contáctanos para obtener más información sobre nuestros productos, ofertas y para hacer tu encargo favorito.</p>
+                    <h2>Contáctanos para obtener más información sobre nuestros productos, ofertas y para hacer tu encargo favorito.</h2>
                 </div>       
                 <div class="container">
                     <div class="row justify-content-center">
@@ -42,15 +44,15 @@
                         <form>
                           <div class="form-group">
                             <label for="nombre">Tu nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
                           </div>
                           <div class="form-group">
                             <label for="email">Tu email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
                           </div>
                           <div class="form-group">
                             <label for="telefono">Tu teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
                           </div>
                           <div class="form-group">
                             <label for="consulta">Tu consulta</label>
@@ -64,27 +66,29 @@
                   </div>
             </section>
        </main>
-       <footer class="footer container-fluid">
+    <footer class="footer container-fluid">
         <div class="footer_contenedor d-flex flex-column align-items-center justify-content-center">
-            <div class="logo">
-                <img src="../assets/images/logo.png" alt="logo">
+          <div class="logo">
+            <a href="../index.html" title="inicio">
+                <img src="../assets/images/logo.png" alt="logo" title="logo">
+            </a>
+        </div>
+        <div class="redes d-flex">
+            <div class="icon">
+                <a href="https://www.instagram.com/nani.g_reposteria/" title="nani reposteria instagram" target="_blank">
+                    <img src="../assets/icons/Instagram-512.webp" alt="instagram" title="instagram">
+                </a>
             </div>
-            <div class="redes d-flex">
-                <div class="icon">
-                    <a href="insta">
-                        <img src="../assets/icons/Instagram-512.webp" alt="instagram">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="wsp" class="wsp">
-                        <img src="../assets/icons/social-whatsapp-circle-512.webp" alt="whatsapp">
-                    </a>
-                </div>
-            </div>
-            <div class="disclaimer row">
-                <p>todos los derechos recervados</p>
+            <div class="icon">
+                <a href="https://www.whatsapp.com/?lang=es" class="wsp" title="whatsapp" target="_blank">
+                    <img src="../assets/icons/social-whatsapp-circle-512.webp" alt="whatsapp" title="whatsapp">
+                </a>
             </div>
         </div>
+        <div class="disclaimer row">
+            <p>Todos los derechos recervados</p>
+        </div>
+      </div>
     </footer>
     <script src="../js/bootstrap.js"></script>
 </body>
